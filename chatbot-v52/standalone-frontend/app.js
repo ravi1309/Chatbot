@@ -52,6 +52,7 @@ class Chatbox {
             mode: 'cors',
             headers: {
               'Content-Type': 'application/json'
+
             },
           })
           .then(r => r.json())
@@ -66,6 +67,7 @@ class Chatbox {
             this.updateChatText(chatbox)
             textField.value = ''
           });
+
     }
 
     updateChatText(chatbox) {
